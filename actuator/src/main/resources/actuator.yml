@@ -1,0 +1,17 @@
+server.port: 8091
+
+
+spring.jackson.serialization.indent_output: true
+
+management:
+  security.enabled: true
+  endpoints:
+    enabled-by-default: true
+    web.exposure.include: '*'
+  endpoint:
+    info.enabled: false
+    health:
+      enabled: true
+      show-details: always
+      defaults.enabled: false
+      diskspace.enabled: false
