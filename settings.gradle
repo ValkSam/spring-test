@@ -1,5 +1,6 @@
 rootProject.name = 'spring-test'
 
-include 'actuator'
 include 'common'
+include 'actuator'
+include 'cassandra'
 

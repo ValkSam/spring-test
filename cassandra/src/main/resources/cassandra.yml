@@ -1,0 +1,11 @@
+server.port: 8091
+
+spring.jackson.serialization.indent_output: true
+
+cassandra:
+  config: abstract
+  url: localhost
+  port: 9042
+  keyspace-name: sample
+  username: cassandra
+  password: cassandra

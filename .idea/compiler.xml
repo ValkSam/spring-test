@@ -7,6 +7,8 @@
     <bytecodeTargetLevel>
       <module name="actuator_main" target="1.8" />
       <module name="actuator_test" target="1.8" />
+      <module name="cassandra_main" target="1.8" />
+      <module name="cassandra_test" target="1.8" />
       <module name="common_main" target="1.8" />
       <module name="common_test" target="1.8" />
     </bytecodeTargetLevel>

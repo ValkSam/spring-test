@@ -41,10 +41,22 @@ subprojects {
         imports {
             mavenBom("org.springframework.boot:spring-boot-dependencies:$project.springBootPluginVersion")
         }
+        dependencies {
+            dependencySet(group: "io.springfox", version: "2.9.2") {
+                entry("springfox-swagger2")
+                entry("springfox-swagger-ui")
+            }
+        }
     }
 
     dependencies {
         compile("org.springframework.boot:spring-boot-starter-web")
+        compileOnly "org.springframework.boot:spring-boot-configuration-processor"
+        compile("org.projectlombok:lombok:1.16.20")
+
+        compile("io.springfox:springfox-swagger2")
+        compile("io.springfox:springfox-swagger-ui")
+
         testCompile('org.springframework.boot:spring-boot-starter-test')
     }
 
